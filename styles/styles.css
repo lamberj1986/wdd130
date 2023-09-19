@@ -1,8 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+h1 {
+    color: steelblue;
+}
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    box-shadow: 0 0 30px gray;
+}
+p {
+    padding: 10px;
+}
 body {
     font-family: Roboto;
 }
+
+/*
+Importing font and setting font for header and paragraph testing.
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
 h1 {
     font-family: 'Rock Salt';
 }
+p {
+    color: red;
+}
+
+Color Palate URL: https://coolors.co/01295f-5bc0eb-394032-9bc53d-840032
+*/
