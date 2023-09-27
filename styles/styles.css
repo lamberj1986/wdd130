@@ -1,4 +1,9 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -7,6 +12,9 @@ nav a {
     color: white;
     display: block;
     padding: 20px;
+}
+li a {
+    color: white;
 }
 h1 {
     color: steelblue;
@@ -17,6 +25,10 @@ main {
 main img {
     width: 150px;
     height: auto;
+    float: right;
+}
+main h2 {
+    clear: both;
 }
 aside {
     margin: 10em;
@@ -30,6 +42,11 @@ aside img {
     width: 200px;
     height: auto;
 }
+aside h2 {
+    position: absolute;
+    top: 790px;
+    left: 125px;
+}
 img {
     width: 150px;
     height: auto;
@@ -42,23 +59,16 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
-
-
-/*
-Importing font and setting font for header and paragraph testing.
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
-
-h1 {
-    font-family: 'Rock Salt';
-}
-body {
-    font-family: Roboto;
-}
-p {
-    color: red;
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #01295f;
+    color: #5bc0eb;
 }
 
-Color Palate URL: https://coolors.co/01295f-5bc0eb-394032-9bc53d-840032
-*/
+aside {
+    width: 20em;
+    text-align: center;
+}
