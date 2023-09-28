@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+li a {
+    color: white;
+}
+
+h1 {
+    color: steelblue;
+}
+
+main {
+    max-width: 840px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    float: right;
+}
+
+main h2 {
+    clear: both;
+}
+
+aside {
+    margin: 10em;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 1em;
+    position: relative;
+    background-color: #0000ff;
+    color: #ffffff;
+    text-align: center;
+    width: 20em;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 125px;
+    left: 100px;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    box-shadow: 0 0 30px gray;
+
+}
+p { 
+    padding: 0; 
+}
+
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #01295f;
+    color: #5bc0eb;
+}
+
+.indent {
+    padding-left: 25px;
+}
