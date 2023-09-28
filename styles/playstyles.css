@@ -6,7 +6,7 @@
 }
 
 nav {
-    background-color: steelblue;
+    background-color: #01295f;
     padding: 10px;
 }
 
@@ -43,7 +43,7 @@ aside {
     border: 1px solid rgba(0,0,0,0.2);
     padding: 1em;
     position: relative;
-    background-color: #0000ff;
+    background-color: #01295f;
     color: #ffffff;
     text-align: center;
     width: 20em;
@@ -63,7 +63,7 @@ aside h2 {
 img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid #01295f;
     box-shadow: 0 0 30px gray;
 
 }
@@ -81,11 +81,11 @@ footer {
 .box {
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.1);
-    padding: 1rem;
+    padding: 2rem;
     background-color: #01295f;
     color: #5bc0eb;
 }
 
 .indent {
-    padding-left: 25px;
+    padding-left: 30px;
 }
