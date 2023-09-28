@@ -65,28 +65,41 @@ nav a:hover {
     position:relative;
 }
 
-.hero h1 {
-    position: absolute;
-}
-
-.hero article{
-    position: absolute;
-}
-
-.hero img{
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
+.hero article {
+    position: absolute;   
+}
+
+.hero h1 {
+    position: absolute;
+    left: 25%;
+}
+
 .superimpose {
 	position: absolute;
-	bottom: 25px;
-	left: 15px;
+    top: 125px;
     background: radial-gradient(#eee, #9bc53d);
 	border: 1px solid #000;
 	padding: 0.65rem;
 	box-shadow: 0 0 30px #111;
+}
+
+.superimpose > img {
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    right: 25px;
+}
+
+.superimpose > p {
+    text-align: start;
+    padding-block-start: 50px;
+    padding-right: 250px;
 }
 
 .sociallinks {
