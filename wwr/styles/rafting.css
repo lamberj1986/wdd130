@@ -15,12 +15,28 @@
     --nav-hover-background-color: #840032;
 }
 
-header {
-    padding: 20px;
-    background-color: var(--accent1-color);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 960px;
+
 }
 
-body {
+header {
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+header img {
+    padding-left: 4rem;
+}
+
+main {
     font-family: var(--heading-font);
     max-width: 960px;
     padding: 20px;
@@ -38,20 +54,16 @@ p {
 }
 
 nav {
-    background-color: var(--nav-hover-background-color);
     font-size: 1.2rem;
     display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
 }
 
 nav a {
     display: block;
     color: var(--nav-link-color);
-    text-decoration: none;
     padding: 1rem;
-}
-
-nav a:link, nav a:visited {
-    color: var(--nav-hover-link-color);
 }
 
 nav a:hover {
@@ -59,7 +71,36 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+footer {
+    margin-top: 1em;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 3rem;
+}
+
+header, .grid, footer {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+span img {
+    flex-direction: row;
+    max-width: 10rem;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+
 /* Classes */
+.header-nav a {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
 
 .hero {
     position:relative;
@@ -80,12 +121,46 @@ nav a:hover {
     left: 25%;
 }
 
+.box {
+    margin: 1rem;
+    background-color: var(--primary-color);
+}
+
+.box h2 {
+    color: #fff;
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.box p {
+    color: var(--secondary-color);
+}
+
+.box2 {
+    margin: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.box2 h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.box2 span{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 .superimpose {
 	position: absolute;
-    top: 125px;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 840px;
     background: radial-gradient(#eee, #9bc53d);
 	border: 1px solid #000;
-	padding: 0.65rem;
+	padding: 1rem;
 	box-shadow: 0 0 30px #111;
 }
 
@@ -94,6 +169,7 @@ nav a:hover {
     position: absolute;
     top: 50px;
     right: 25px;
+    padding: 0.65rem;
 }
 
 .superimpose > p {
@@ -103,6 +179,19 @@ nav a:hover {
 }
 
 .sociallinks {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.sociallinks p {
+    grid-column: 1/2;
+    margin: 1rem;
     justify-content: center;
+    align-content: center;
+}
+
+.sociallinks nav {
+    grid-column: 2/3;
+    margin: 1rem;
 }
