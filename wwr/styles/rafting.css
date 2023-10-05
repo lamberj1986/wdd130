@@ -25,7 +25,7 @@
 
 header {
     padding: 1rem;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     margin: 1rem auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -85,10 +85,11 @@ header, .grid, footer {
     margin: 0 auto;
 }
 
-span img {
+section img {
+    display: flex;
     flex-direction: row;
     max-width: 10rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center; 
 }
 
@@ -147,7 +148,7 @@ span img {
     padding: 1rem;
 }
 
-.box2 span{
+.box2 div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
