@@ -171,11 +171,9 @@ section img {
 }
 
 .superimpose > img {
+    float: right;
     height: 150px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 0.65rem;
+    padding: .1rem;
 }
 
 .superimpose > p {
