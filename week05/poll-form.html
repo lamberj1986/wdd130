@@ -6,38 +6,58 @@
     <title>WDD 130 | HTML Form - User Poll</title>
     <link rel="stylesheet" href="styles/poll-form.css">
 </head>
-<header>
-    <h1>WDD 130 | Jeff Lambert | HTML Form - User Poll</h1>
-</header>
-<main>
-    <form>
-        <fieldset>
-            <legend>Contact Information</legend>
-            <label for="fullname">Full Name:</label><br>
-            <input type="text" id="fullname" name="fullname">
-            <label for="useremail">Email:</label><br>
-            <input type="text" id="useremail" name="useremail">
-        </fieldset>
-        <fieldset>
-            <legend>Questions</legend>
-            <label for="browser">What is your faborite browser?</label>
-            <select id="browser" name="browser">
-                <option value="chrome">Chrome</option>
-                <option value="firefox">Firefox</option>
-                <option value="safari">Safari</option>
-                <option value="brave">Brave</option>
-                <option value="opera">Opera</option>
-                <option value="other">Other</option>
-            </select><br>
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" id="pet" name="pet"><br>
-            <label for="areaslived">List the places you have lived:</label><br>
-            <textarea id="areaslived" name="areaslived" rows="4" placeholder="Frankfurt, Germany; Denver, Colorado; Huntindgon, England; Grand Rapids, Michigan"></textarea>
-        </fieldset>
-        <button type="submit">Submit Poll</button>
-    </form>
-</main>
-<footer>
-    <p>©2023 | HTML Form - User Poll Activity | Jeffery Lambert</p>
-</footer>
+<body>
+    <header>
+        <h1>WDD 130 | Jeff Lambert | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!--Question 1-->
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <!--Question 2-->
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="text" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <!--Question 3-->
+                <div class="form-item column1">
+                    <label for="browser">What is your faborite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="brave">Brave</option>
+                        <option value="opera">Opera</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <!--Question 4-->
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet" placeholder="Yes">
+                </div>
+                <!--Question 5-->
+                <div class="form-item">
+                    <label for="areaslived">List the places you have lived:</label>
+                    <textarea id="areaslived" name="areaslived" rows="4" placeholder="Frankfurt, Germany; 
+Denver, Colorado; 
+Huntindgon, England; 
+Grand Rapids, Michigan"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>©2023 | HTML Form - User Poll Activity | Jeffery Lambert</p>
+    </footer>
+</body>
 </html>

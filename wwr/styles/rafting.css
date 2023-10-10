@@ -6,8 +6,8 @@
     --accent1-color: #9bc53d;
     --accent2-color: #840032;
 
-    --heading-font: 'Mooli', sansserif;
-    --paragraph-font: 'Poppis', sansserif;
+    --heading-font: 'Mooli', sans-serif;
+    --paragraph-font: 'Poppis', sans-serif;
 
     --nav-background-color: #01295f;
     --nav-link-color: #5bc0eb;
@@ -20,7 +20,6 @@
     padding: 0;
     box-sizing: border-box;
     max-width: 960px;
-
 }
 
 header {
