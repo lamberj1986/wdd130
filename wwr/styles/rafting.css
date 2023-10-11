@@ -92,6 +92,59 @@ section img {
     align-items: center; 
 }
 
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid #840032;
+    border-radius: 0.5rem;    
+    background-color: #01295f;
+    color: #9bc53d;
+    position: relative;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    border: 1px solid #840032;
+    padding: 0.5rem;
+}
+
+legend {
+    padding: 0.25rem;
+    font-size: 1.2rem;
+}
+
+label, input, button, select, textarea {
+    font-family: 'Poppis', sans-serif;
+}
+
+label {
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.05rem;
+    font-family: 'Poppis', sans-serif;
+}
+
+button {
+    font-family: 'Poppis', sans-serif;
+    background-color: var(--accent1-color);
+    color: var(--nav-background-color);
+    padding: .75rem;
+    margin-top: .5rem;
+    border: none;
+    border-radius: .5rem;
+    display:flex;
+    margin: 0.75rem auto 0;
+    font-weight: 850;
+}
+
+button:hover {
+    background-color: var(--nav-hover-background-color);
+}
 
 /* Classes */
 .header-nav a {
@@ -129,12 +182,12 @@ section img {
 .box {
     margin: 1rem;
     background-color: var(--primary-color);
+    padding-bottom: 1rem;
 }
 
 .box h2 {
     color: #fff;
     text-align: center;
-    background-color: var(--primary-color);
     padding: 1rem;
 }
 
@@ -144,6 +197,7 @@ section img {
 
 .box2 {
     margin: 1rem;
+    padding-bottom: 1.5rem;
     background-color: var(--secondary-color);
 }
 
@@ -197,4 +251,25 @@ section img {
 .sociallinks nav {
     grid-column: 2/3;
     margin: 1rem;
+}
+
+.sociallinks a {
+    color: var(--nav-link-color);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: auto 1fr;
+    margin: 0.5rem 0;
+    text-align: right;
+}
+
+.column2 {
+    grid-template-columns: 2fr 3fr;
+    margin: 0.5rem 0;
+    text-align: right;
 }

@@ -18,85 +18,90 @@
     </nav>
 </header>
 <main>
-    <!--To be changed, but want to keep as much styling as possible-->
-    <div class="hero">
-        <img src="images/wwr_hero.jpg" alt="Rafting backdrop">
-        <h1>Splish Splash Rafting</h1>
-        <article class="superimpose">
-            <img src="images/happy_rafters.png" alt="Who wouldn't have fun while rafting with Splish Splash">
-            <p>
-                Welcome to the Splish Splash Rafting company, where our job is to make sure that you don't leave the river dry. If you aren't wet, you aren't having fun! Please take some time to look around at all of our offerings and make sure to book your next rafting adventure with us soon! 
-                <br> 
-                <br> 
-                We are working on what our purpose, mission, creed, and motto is right now. Feel free to check back with us as we are working on things.
-            </p>
-        </article>
-    </div>    
     <section class="box2">
-        <h2>Our happy employees!</h2>
+        <h2>Meet our happy employees!</h2>
         <div>
             <figure>
-                <img src="images/raftbanner1.jpg" alt="Banner Image 1">
-                <figcaption>Office Manager</figcaption>
+                <img src="images/office-manager.jpg" alt="Joe our hardworking office manager">
+                <figcaption>John, our Office Manager</figcaption>
             </figure>
             <figure>
-                <img src="images/raftbanner2.jpg" alt="Banner Image 2">
-                <figcaption>Customer Service</figcaption>
+                <img src="images/customer-service.jpg" alt="Our customer service teams take your calls wherever they are">
+                <figcaption>Lacy and Susan, our Customer Service Reps</figcaption>
             </figure>
             <figure>
-                <img src="images/raftbanner3.jpg" alt="Banner Image 3">
-                <figcaption>Equipment Manager</figcaption>
+                <img src="images/equipment-mgr.jpg" alt="Our equipment manager testing things out with a group on the rapids">
+                <figcaption>Francis, our Equipment Manager</figcaption>
             </figure>
             <figure>
-                <img src="images/raftbanner4.jpg" alt="Banner Image 4">
-                <figcaption>Guide 1</figcaption>
+                <img src="images/guide1.jpg" alt="Guide #1 with a group enjoying life on the rapids">
+                <figcaption>Walt, one of our Guides</figcaption>
             </figure>
             <figure>
-                <img src="images/raftbanner5.jpg" alt="Banner Image 5">
-                <figcaption>Guide 2</figcaption>
+                <img src="images/guide2.jpg" alt="Guide #2 in a competition hitting the rapids with ease">
+                <figcaption>Larry, one of our Guides</figcaption>
             </figure>            
         </div>
-        <section class="box">
-            <h2>Contact Us</h2>
-            <form>
-                <fieldset>
-                    <legend>Contact Information</legend>
-                    <!--Question 1-->
-                    <div class="form-item column2">
-                        <label for="fullname">Full Name:</label>
-                        <input type="text" id="fullname" name="fullname">
-                    </div>
-                    <!--Question 2-->
-                    <div class="form-item column2">
-                        <label for="useremail">Email:</label>
-                        <input type="text" id="useremail" name="useremail">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <!--Question 3-->
-                    <div class="form-item">
-                        <p>What is your purpose for reaching out to us today?</p><br>
-                        <input type="radio" id="general" name="purpose" value="general">
-                        <label for="general">General Inquiry</label><br>
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        <label for="reservation">Reservation Question</label><br>
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                        <label for="suggestion">Website Suggestion</label><br>
-                    </div>
-                    <!--Question 4-->
-                    <div class="form-item">
-                        <label for="q4">How many times in a given month could you eat your favorite meal?</label>
-                        <input type="number" id="q4" name="q4">
-                    </div>
-                </fieldset>
-                <button type="submit">Submit Form</button>
-            </form>
-        </section>
+        <br>
+    </section>
+    <section class="box">
+        <h2>Where to find us</h2>
+        <div class="form-item column1">
+            <p>Address: 123 W Main Street, Lowell, MI 49331
+                <br><br>
+                Phone Number: 616-555-RAFT (7238)
+                <br> <br>
+                Email: <a href="mailto:splishsplashrafting@abc.com">SplishSplashRafting@abc.com</a>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2921.078708461569!2d-85.34131447605294!3d42.93446753190063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697067146368!5m2!1sen!2sus" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section class="box2">
+        <h2>Contact Us</h2>
+        <form>
+            <fieldset>
+                <legend>Your Info</legend>
+                <!--Question 1-->
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <!--Question 2-->
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="text" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>How can we help?</legend>
+                <!--Question 3-->
+                <div class="form-item column1">
+                    <label for="purpose">Purpose:</label>
+                    <select id="purpose" name="purpose" style="width: 225px;">
+                        <option value="" selected disabled>Choose One...</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="reservation">Reservation Question</option>
+                        <option value="suggestion">Website Suggestion</option>
+                    </select>
+                </div>
+                <!--Question 4-->
+                <div class="form-item column1">
+                    <label for="custfb">Message:</label>
+                    <textarea id="custfb" name="custfb" rows="4" style="width: 400px;" placeholder="How can we help?"></textarea>
+                </div>
+                <!--Question 5-->
+                <div class="form-item">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter" style="width: 350px; padding-left: 1.5rem;">Would you like to join our newsletter?</label>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Form</button>
+        </form>
     </section>
 </main>
 <footer>
     <div class="sociallinks box">
-        <p>©2023 | Splish Splash Rafting | Jeffery Lambert</p>
+        <p>©2023 | Splish Splash Rafting | Jeffery Lambert<br><br><a href="https://app.moqups.com/zFIrvi5JWbuHDEX2b0wtmTmD4fS7ZVgr/view/page/ad64222d5" target="_blank">Contact Us Wireframe</a></p>
         <nav>
             <a href="https://facebook.com">
                 <img src="images/facebook.png" alt="Facebook">
