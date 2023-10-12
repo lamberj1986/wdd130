@@ -18,6 +18,7 @@
     </nav>
 </header>
 <main>
+    <h1 style="text-align: center;">Contact Us</h1>
     <section class="box2">
         <h2>Meet our happy employees!</h2>
         <div>
@@ -75,7 +76,20 @@
             <fieldset>
                 <legend>How can we help?</legend>
                 <!--Question 3-->
-                <div class="form-item column1">
+                <div class="column3">
+                    <input type="radio" id="general" name="purpose" value="general">
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div class="column3">
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div class="column3">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Sugestion</label>
+                </div>
+                <!--
+                <div>
                     <label for="purpose">Purpose:</label>
                     <select id="purpose" name="purpose" style="width: 225px;">
                         <option value="" selected disabled>Choose One...</option>
@@ -84,6 +98,7 @@
                         <option value="suggestion">Website Suggestion</option>
                     </select>
                 </div>
+                -->
                 <!--Question 4-->
                 <div class="form-item column1">
                     <label for="custfb">Message:</label>

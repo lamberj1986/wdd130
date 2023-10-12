@@ -146,6 +146,10 @@ button:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+input[type="radio"] {
+    margin-left: 10px;
+}
+
 /* Classes */
 .header-nav a {
     background-color: var(--nav-hover-background-color);
@@ -272,4 +276,9 @@ button:hover {
     grid-template-columns: 2fr 3fr;
     margin: 0.5rem 0;
     text-align: right;
+}
+
+.column3 {
+    align-items: center;
+    text-align: left;
 }
