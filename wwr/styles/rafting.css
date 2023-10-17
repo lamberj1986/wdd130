@@ -282,3 +282,7 @@ input[type="radio"] {
     align-items: center;
     text-align: left;
 }
+
+.white-text {
+    color: #fff;
+}
