@@ -360,7 +360,7 @@ hr.rounded {
     background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 10px;
-    color: #fff;
+    color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;    
