@@ -122,7 +122,7 @@ form {
     border: 2px solid #840032;
     border-radius: 0.5rem;    
     background-color: #01295f;
-    color: #9bc53d;
+    color: var(--accent1-color);
     position: relative;
 }
 
@@ -131,6 +131,10 @@ fieldset {
     grid-gap: .5rem;
     border: 1px solid #840032;
     padding: 0.5rem;
+}
+
+fieldset > p {
+    color: var(--accent1-color)
 }
 
 legend {
@@ -374,4 +378,5 @@ hr.rounded {
 
 .g-map {
     border: 0;
+    padding-left: 25px;
 }
