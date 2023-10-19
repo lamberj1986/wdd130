@@ -293,6 +293,20 @@ hr.rounded {
     display: grid;
     align-items: center;
 }
+.button {
+    background-color: var(--accent1-color);
+    border: none;
+    border-radius: 10px ;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .column1 {
     grid-template-columns: auto 1fr;
@@ -327,7 +341,6 @@ hr.rounded {
     background-color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
@@ -339,7 +352,6 @@ hr.rounded {
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    grid-row: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
