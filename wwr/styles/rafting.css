@@ -44,6 +44,7 @@ main {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;    
 }
 
 main > h1 {
@@ -54,6 +55,24 @@ p {
     font-family: var(--paragraph-font);
     color: var(--accent2-color);
     padding: 25px;
+}
+
+table, th, td {
+    border: 1px solid;    
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--accent1-color)
+}
+
+td {
+    background-color: var(--secondary-color);
 }
 
 nav {
@@ -163,6 +182,11 @@ input[type="radio"] {
     font-weight: 700;
 }
 
+hr.rounded {
+    border-top: 8px solid var(--primary-color);
+    border-radius: 5px;
+}
+
 .hero {
     position:relative;
 }
@@ -179,7 +203,7 @@ input[type="radio"] {
 
 .hero h1 {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 0;
     right: 0;
     padding: 0;
@@ -225,22 +249,18 @@ input[type="radio"] {
     left: 50%;
     transform:translate(-50%, -50%);
     width: 840px;
-    background: radial-gradient(#eee, #9bc53d);
+    background: radial-gradient(#eee, var(--accent1-color));
 	border: 1px solid #000;
 	padding: 1rem;
 	box-shadow: 0 0 30px #111;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .superimpose > img {
-    float: right;
+    vertical-align: center;
     height: 150px;
-    padding: .1rem;
-}
-
-.superimpose > p {
-    text-align: start;
-    padding-block-start: 10px;
-    padding-right: 250px;
+    margin: auto;
 }
 
 .sociallinks {
@@ -293,6 +313,58 @@ input[type="radio"] {
 
 .text-box {
     width: 400px;
+}
+
+.trip-grid{
+    margin: 20px auto;
+    width: 850px;
+    height: auto;
+    justify-content: center;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.home-grid{
+    margin: 20px auto;
+    width: 850px;
+    height: auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.trip-item{
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-family: var(--paragraph-font);
+}
+
+.home-item{
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-family: var(--paragraph-font);
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .signup {
